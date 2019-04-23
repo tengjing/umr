@@ -1,14 +1,13 @@
 package com.umr.dao.model;
 
 import java.util.Date;
-
 import lombok.Data;
 
 /**
  * Table: user
  */
 @Data
-public class User {
+public class UserDo {
     /**
      * 用户编号
      *

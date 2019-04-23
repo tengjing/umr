@@ -10,6 +10,13 @@
 
     <artifactId>umr-dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.umr</groupId>
+            <artifactId>umr-common</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- mybatis自动生成代码的插件 -->

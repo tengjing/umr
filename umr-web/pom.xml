@@ -10,4 +10,11 @@
 
     <artifactId>umr-web</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.umr</groupId>
+            <artifactId>umr-service</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
