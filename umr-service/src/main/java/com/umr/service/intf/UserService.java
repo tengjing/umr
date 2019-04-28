@@ -1,5 +1,7 @@
 package com.umr.service.intf;
 
+import com.umr.service.dto.request.RegisterRequest;
+
 /**
  * 用户操作
  *
@@ -12,7 +14,7 @@ public interface UserService {
     /**
      * 注册
      */
-    void register();
+    void register(RegisterRequest request);
 
     /**
      * 登录

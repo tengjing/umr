@@ -1,5 +1,6 @@
 package com.umr.dao.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -29,11 +30,15 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void insertUser(UserDo userDo) {
+        Date now = new Date();
+        userDo.setCreateTime(now);
+        userDo.setUpdateTime(now);
         userDoMapper.insertSelective(userDo);
     }
 
     @Override
     public void updateUser(UserDo userDo) {
+        userDo.setUpdateTime(new Date());
         userDoMapper.updateByPrimaryKeySelective(userDo);
     }
 

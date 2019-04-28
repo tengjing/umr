@@ -8,11 +8,11 @@
     <context id="DB2Tables"  targetRuntime="MyBatis3">
         <property name="javaFileEncoding" value="UTF-8"/>
         <!-- 整合lombok-->
-        <plugin type="com.chrm.mybatis.generator.plugins.LombokPlugin" >
+        <plugin type="com.umr.common.mybatis.LombokPlugin" >
             <property name="hasLombok" value="true"/>
         </plugin>
         <!-- 自定义的注释生成插件-->
-        <plugin type="com.chrm.mybatis.generator.plugins.CommentPlugin">
+        <plugin type="com.umr.common.mybatis.CommentPlugin">
             <!-- 抑制警告 -->
             <property name="suppressTypeWarnings" value="true" />
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->

@@ -2,6 +2,8 @@ package com.umr.service.dto.request;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotBlank;
+
 import lombok.Builder;
 import lombok.Data;
 
@@ -21,10 +23,12 @@ public class RegisterRequest implements Serializable {
     /**
      * 账号
      */
+    @NotBlank(message = "账号不能为空")
     private String account;
 
     /**
      * 密码
      */
+    @NotBlank(message = "密码不能为空")
     private String password;
 }

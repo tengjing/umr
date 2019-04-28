@@ -42,6 +42,8 @@
         <!--google提供的常用工具包-->
         <guava.version>18.0</guava.version>
         <springboot.version>2.0.6.RELEASE</springboot.version>
+        <validation.version>2.0.1</validation.version>
+        <thymeleaf.version>2.0.4.RELEASE</thymeleaf.version>
     </properties>
 
     <dependencyManagement>
@@ -61,6 +63,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${thymeleaf.version}</version>
             </dependency>
 
             <!-- 数据库相关-start -->
