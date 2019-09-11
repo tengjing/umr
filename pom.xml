@@ -43,7 +43,6 @@
         <guava.version>18.0</guava.version>
         <springboot.version>2.0.6.RELEASE</springboot.version>
         <validation.version>2.0.1</validation.version>
-        <thymeleaf.version>2.0.4.RELEASE</thymeleaf.version>
     </properties>
 
     <dependencyManagement>
@@ -63,11 +62,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-thymeleaf</artifactId>
-                <version>${thymeleaf.version}</version>
             </dependency>
 
             <!-- 数据库相关-start -->
@@ -135,6 +129,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <!-- activiti -->
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-spring-boot-starter-basic</artifactId>
+                <version>6.0.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

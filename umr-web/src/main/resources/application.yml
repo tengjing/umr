@@ -42,15 +42,10 @@ spring:
           statement-executable-sql-log-enable: true
         config:
           enabled: true
+  activiti:
+    #每次应用启动不检查Activiti数据表是否存在及版本号是否匹配，提升应用启动速度
+    database-schema-updat: false
+    #保存历史数据级别设置为full最高级别，便于历史数据的追溯
+    history-level: full
 
-  # thymeleaf
-  thymeleaf:
-    prefix: /webapp/WEB-INF/
-    check-template-location: true
-    suffix: .html
-    encoding: UTF-8
-    mode: HTML5
-    cache: false
-    servlet:
-      content-type: text/html
 
