@@ -41,7 +41,7 @@
         <commons-lang3.version>3.7</commons-lang3.version>
         <!--google提供的常用工具包-->
         <guava.version>18.0</guava.version>
-        <springboot.version>2.0.6.RELEASE</springboot.version>
+        <springboot.version>2.5.12</springboot.version>
         <validation.version>2.0.1</validation.version>
     </properties>
 
